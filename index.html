@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Weiterleitung</title>
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <p>Weiterleitung zu MyFinance ...</p>
+  <script>
+    // Reicht den Code der Bank an die lokale MyFinance-Instanz weiter
+    window.location.replace("http://localhost:5173/api/banking/callback" + window.location.search);
+  </script>
+</body>
+</html>
